@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maithaisfoodtruck</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff8f1;
+      color: #333;
+    }
+    header {
+      position: relative;
+      padding: 1.5rem;
+      text-align: center;
+      background: #0000cc;
+      color: white;
+    }
+    header div {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 20px;
+      background: linear-gradient(
+        to bottom,
+        #ff0000 0%,
+        #ff0000 20%,
+        #ffffff 20%,
+        #ffffff 40%,
+        #0000cc 40%,
+        #0000cc 60%,
+        #ffffff 60%,
+        #ffffff 80%,
+        #ff0000 80%,
+        #ff0000 100%
+      );
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .menu-section {
+      /* no flex here */
+    }
+    .menu-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .menu-images img {
+      width: 30%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+    }
+    .menu-images img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .menu-images img {
+        width: 90%;
+      }
+    }
+    .location-section {
+      background: #ffe0c1;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .button {
+      display: inline-block;
+      background: #ff7e1b;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background: #ff7e1b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div></div>
+    <h1 style="margin: 0;">Maithaisfoodtruck</h1>
+    <p style="margin: 0;">Authentisches thailändisches Streetfood auf Rädern!</p>
+  </header>
+
+  <main>
+    <section class="menu-section">
+      <h2>Unser Menu</h2>
+      <p>Eine Auswahl an traditionellen thailändischen Gerichten!</p>
+
+      <div class="menu-images">
+        <img src="redcurry.jpeg" alt="Thai Dish 1">
+        <img src="greencurry.jpeg" alt="Thai Dish 2">
+        <img src="padthai.jpeg" alt="Thai Dish 3">
+        <img src="satay.jpeg" alt="Thai Dish 4">
+        <img src="ananas.jpeg" alt="Thai Dish 5">
+        <img src="gaengkaripoulet.jpeg" alt="Thai Dish 6">
+      </div>
+    </section>
+
+    <section class="location-section">
+      <h2>Wo ihr uns findet</h2>
+      <p><strong>Montags(09:00-14:30):</strong> Rosalia Wenger Platz, CH</p>
+      <a class="button" href="https://www.google.com/maps/place/Rosalia+Wenger+Platz" target="_blank">View on Google Maps</a>
+      
+      <p style="margin-top: 1rem;"><strong>Donnerstags(09:00-14:30):</strong> Helvetiaplatz</p>
+      <a class="button" href="https://www.google.com/maps/place/Helvetiaplatz" target="_blank">View on Google Maps</a>
+    </section>
+
+    <section>
+      <h2>Kontaktiere uns unter:</h2>
+      <p>Email: maithai007@gmail.com</p>
+      <p>Telefon: +41 79 366 09 22</p>
+      <p>
+        Folge uns auf 
+        <a href="https://www.instagram.com/maithaicatering" target="_blank" rel="noopener noreferrer">
+          📸 Instagram
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Maithaisfoodtruck
+  </footer>
+
+</body>
+</html>
